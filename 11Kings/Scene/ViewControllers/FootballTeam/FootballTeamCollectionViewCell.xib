@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FootballTeamCollectionViewCell" id="ETr-Zy-lax" customClass="FootballTeamCollectionViewCell" customModule="_1Kings" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="311" height="277"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="311" height="277"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pqq-Wc-yVw">
+                        <rect key="frame" x="0.0" y="0.0" width="311" height="277"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wW6-Wh-qPK">
+                                <rect key="frame" x="0.0" y="0.0" width="311" height="277"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5bl-6n-gdN">
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="277"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="ETr-Zy-lax" id="RY6-xB-8vd"/>
+                                            <outlet property="delegate" destination="ETr-Zy-lax" id="Zue-dK-2oA"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="5bl-6n-gdN" secondAttribute="bottom" id="Etl-UG-aNZ"/>
+                                    <constraint firstItem="5bl-6n-gdN" firstAttribute="leading" secondItem="wW6-Wh-qPK" secondAttribute="leading" id="eO8-V1-Suv"/>
+                                    <constraint firstAttribute="trailing" secondItem="5bl-6n-gdN" secondAttribute="trailing" id="fED-MX-cbb"/>
+                                    <constraint firstItem="5bl-6n-gdN" firstAttribute="top" secondItem="wW6-Wh-qPK" secondAttribute="top" id="yph-6z-o4v"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="wW6-Wh-qPK" secondAttribute="bottom" id="4iM-xf-Rtn"/>
+                            <constraint firstItem="wW6-Wh-qPK" firstAttribute="leading" secondItem="pqq-Wc-yVw" secondAttribute="leading" id="PKO-dB-VJY"/>
+                            <constraint firstAttribute="trailing" secondItem="wW6-Wh-qPK" secondAttribute="trailing" id="ee8-OM-0fJ"/>
+                            <constraint firstItem="wW6-Wh-qPK" firstAttribute="top" secondItem="pqq-Wc-yVw" secondAttribute="top" id="zf1-Ut-Svg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="pqq-Wc-yVw" secondAttribute="bottom" id="B3b-LV-1ga"/>
+                <constraint firstItem="pqq-Wc-yVw" firstAttribute="leading" secondItem="ETr-Zy-lax" secondAttribute="leading" id="Ngw-6O-FFy"/>
+                <constraint firstAttribute="trailing" secondItem="pqq-Wc-yVw" secondAttribute="trailing" id="cdM-RC-6dL"/>
+                <constraint firstItem="pqq-Wc-yVw" firstAttribute="top" secondItem="ETr-Zy-lax" secondAttribute="top" id="fcR-MB-uOh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="6ye-gw-Qsi"/>
+            <size key="customSize" width="311" height="277"/>
+            <connections>
+                <outlet property="aTableView" destination="5bl-6n-gdN" id="Pek-tc-Hc3"/>
+            </connections>
+            <point key="canvasLocation" x="106.40000000000001" y="125.4872563718141"/>
+        </collectionViewCell>
+    </objects>
+</document>

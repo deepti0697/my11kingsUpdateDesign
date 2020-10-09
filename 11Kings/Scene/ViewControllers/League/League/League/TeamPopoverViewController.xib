@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController storyboardIdentifier="TeamPopoverViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="nAN-pV-Pvq" customClass="TeamPopoverViewController" customModule="Club11" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="iHP-h6-NSM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KdK-Q9-2Pn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wuk-pP-7QN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="nAN-pV-Pvq" id="Zfs-tY-LL4"/>
+                                    <outlet property="delegate" destination="nAN-pV-Pvq" id="ljA-YP-GYO"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="wuk-pP-7QN" secondAttribute="bottom" id="iHZ-Zj-kto"/>
+                            <constraint firstItem="wuk-pP-7QN" firstAttribute="leading" secondItem="KdK-Q9-2Pn" secondAttribute="leading" id="koq-kW-L23"/>
+                            <constraint firstAttribute="trailing" secondItem="wuk-pP-7QN" secondAttribute="trailing" id="nm0-5i-VVL"/>
+                            <constraint firstItem="wuk-pP-7QN" firstAttribute="top" secondItem="KdK-Q9-2Pn" secondAttribute="top" id="yry-ZS-n6O"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="4Xr-PA-JYT" firstAttribute="trailing" secondItem="KdK-Q9-2Pn" secondAttribute="trailing" id="3Vi-aY-3Mt"/>
+                    <constraint firstItem="KdK-Q9-2Pn" firstAttribute="top" secondItem="4Xr-PA-JYT" secondAttribute="top" id="LfM-lo-UeT"/>
+                    <constraint firstItem="KdK-Q9-2Pn" firstAttribute="leading" secondItem="4Xr-PA-JYT" secondAttribute="leading" id="Vpj-aU-snN"/>
+                    <constraint firstItem="4Xr-PA-JYT" firstAttribute="bottom" secondItem="KdK-Q9-2Pn" secondAttribute="bottom" id="pRB-j9-5ey"/>
+                </constraints>
+                <viewLayoutGuide key="safeArea" id="4Xr-PA-JYT"/>
+            </view>
+            <connections>
+                <outlet property="aPopupView" destination="KdK-Q9-2Pn" id="j3s-eB-3y9"/>
+                <outlet property="aTableView" destination="wuk-pP-7QN" id="knm-VN-2YV"/>
+            </connections>
+            <point key="canvasLocation" x="596" y="868"/>
+        </viewController>
+    </objects>
+</document>

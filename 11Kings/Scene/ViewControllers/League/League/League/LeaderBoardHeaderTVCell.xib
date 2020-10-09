@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="LeaderBoardHeaderTVCell" customModule="Club11" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="poP-bx-8GB">
+                        <rect key="frame" x="15" y="7" width="42" height="29.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3s-WF-c74">
+                        <rect key="frame" x="165.5" y="11.5" width="47.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Tc-NR-CRl">
+                        <rect key="frame" x="248" y="11.5" width="38.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KwI-fS-dQB">
+                        <rect key="frame" x="296.5" y="10" width="23.5" height="23.5"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="KwI-fS-dQB" secondAttribute="trailing" id="BBN-ZR-KnY"/>
+                    <constraint firstItem="KwI-fS-dQB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="E2Y-nt-czO"/>
+                    <constraint firstItem="poP-bx-8GB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="NdO-n6-EO9"/>
+                    <constraint firstItem="KwI-fS-dQB" firstAttribute="width" secondItem="KwI-fS-dQB" secondAttribute="height" multiplier="1:1" id="TDM-5t-KcM"/>
+                    <constraint firstItem="poP-bx-8GB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="YQq-jI-gr9"/>
+                    <constraint firstAttribute="bottom" secondItem="poP-bx-8GB" secondAttribute="bottom" constant="7" id="aq8-xh-Lgm"/>
+                    <constraint firstItem="r3s-WF-c74" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dim-fF-kbM"/>
+                    <constraint firstItem="KwI-fS-dQB" firstAttribute="leading" secondItem="6Tc-NR-CRl" secondAttribute="trailing" constant="10" id="hQE-aX-zyk"/>
+                    <constraint firstAttribute="bottom" secondItem="KwI-fS-dQB" secondAttribute="bottom" constant="10" id="nnf-NP-6PR"/>
+                    <constraint firstItem="6Tc-NR-CRl" firstAttribute="leading" secondItem="r3s-WF-c74" secondAttribute="trailing" constant="35" id="qFh-H5-kSz"/>
+                    <constraint firstItem="6Tc-NR-CRl" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="tjN-T2-Y3N"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="aLabel" destination="poP-bx-8GB" id="scM-qE-iMI"/>
+                <outlet property="aPointLabel" destination="r3s-WF-c74" id="cMQ-zo-LsQ"/>
+                <outlet property="aRankLabel" destination="6Tc-NR-CRl" id="z82-78-MF2"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

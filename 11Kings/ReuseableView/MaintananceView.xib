@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MaintananceView" customModule="My11Kings" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 8974" translatesAutoresizingMaskIntoConstraints="NO" id="e1y-0c-Qxm">
+                    <rect key="frame" x="20.5" y="224" width="373.5" height="269"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are Under Maintenance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuT-BI-IWb">
+                    <rect key="frame" x="74.5" y="513" width="265" height="26"/>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="22"/>
+                    <color key="textColor" red="1" green="0.99215686270000003" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We will right back. Please check back  after some time " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pX-3N-cC7">
+                    <rect key="frame" x="40" y="569" width="334" height="33"/>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                    <color key="textColor" red="1" green="0.99215686270000003" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.72549019607843135" green="0.12941176470588234" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="3pX-3N-cC7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9Zo-wm-AfN"/>
+                <constraint firstItem="3pX-3N-cC7" firstAttribute="top" secondItem="fuT-BI-IWb" secondAttribute="bottom" constant="30" id="BC9-SJ-kjT"/>
+                <constraint firstItem="fuT-BI-IWb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="GIF-vf-nCQ"/>
+                <constraint firstItem="e1y-0c-Qxm" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.8" id="XPj-Z3-1Lw"/>
+                <constraint firstItem="e1y-0c-Qxm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="XSf-ik-8ng"/>
+                <constraint firstItem="fuT-BI-IWb" firstAttribute="top" secondItem="e1y-0c-Qxm" secondAttribute="bottom" constant="20" id="d6l-CI-f9K"/>
+                <constraint firstItem="e1y-0c-Qxm" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.3" constant="0.34999999999999998" id="mHn-v6-JJK"/>
+                <constraint firstItem="3pX-3N-cC7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="nxE-YU-4nV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3pX-3N-cC7" secondAttribute="trailing" constant="40" id="qZV-zo-JAA"/>
+                <constraint firstItem="e1y-0c-Qxm" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.9" constant="0.90000000000000002" id="xng-0u-VCv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="141" y="121"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Group 8974" width="353" height="256.5"/>
+    </resources>
+</document>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlayerCollectionViewCell" id="A2a-Jd-LPp" customClass="PlayerCollectionViewCell" customModule="My11Kings" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="219"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="XdQ-Tu-2Yw">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="219"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lBC-b2-UmJ">
+                        <rect key="frame" x="0.0" y="50" width="350" height="169"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <outlet property="dataSource" destination="-1" id="KbZ-Td-zNh"/>
+                            <outlet property="delegate" destination="-1" id="kHC-hJ-ERT"/>
+                        </connections>
+                    </tableView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VLq-gZ-xTW">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="50"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Kh-7H-GL8">
+                                <rect key="frame" x="10" y="10.5" width="39" height="29"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                <state key="normal" title="Player">
+                                    <color key="titleColor" red="1" green="0.99215686270000003" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xZ-8P-uU7">
+                                <rect key="frame" x="293" y="10.5" width="42" height="29"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                <state key="normal" title="% C By">
+                                    <color key="titleColor" red="1" green="0.99215686270000003" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNz-zS-48G">
+                                <rect key="frame" x="229" y="10.5" width="49" height="29"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                <state key="normal" title="%Sel By">
+                                    <color key="titleColor" red="1" green="0.99215686270000003" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHQ-Vv-jAn">
+                                <rect key="frame" x="166" y="10.5" width="33" height="29"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                <state key="normal" title="Point">
+                                    <color key="titleColor" red="1" green="0.99215686270000003" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.67450980390000004" green="0.52941176469999995" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="0Kh-7H-GL8" firstAttribute="leading" secondItem="VLq-gZ-xTW" secondAttribute="leading" constant="10" id="6jA-tB-bHF"/>
+                            <constraint firstItem="BHQ-Vv-jAn" firstAttribute="centerY" secondItem="VLq-gZ-xTW" secondAttribute="centerY" id="Obc-JT-nxM"/>
+                            <constraint firstAttribute="height" constant="50" id="R8M-Ue-9L8"/>
+                            <constraint firstItem="tNz-zS-48G" firstAttribute="leading" secondItem="BHQ-Vv-jAn" secondAttribute="trailing" constant="30" id="UoU-aq-jyS"/>
+                            <constraint firstAttribute="trailing" secondItem="8xZ-8P-uU7" secondAttribute="trailing" constant="15" id="lGP-8Y-t7J"/>
+                            <constraint firstItem="tNz-zS-48G" firstAttribute="centerY" secondItem="VLq-gZ-xTW" secondAttribute="centerY" id="nu5-dV-6lk"/>
+                            <constraint firstItem="0Kh-7H-GL8" firstAttribute="centerY" secondItem="VLq-gZ-xTW" secondAttribute="centerY" id="ozO-E9-f8T"/>
+                            <constraint firstItem="8xZ-8P-uU7" firstAttribute="leading" secondItem="tNz-zS-48G" secondAttribute="trailing" constant="15" id="pne-1z-euS"/>
+                            <constraint firstItem="8xZ-8P-uU7" firstAttribute="centerY" secondItem="VLq-gZ-xTW" secondAttribute="centerY" id="qIu-el-KMy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="lBC-b2-UmJ" secondAttribute="trailing" id="0E8-5G-7ta"/>
+                    <constraint firstItem="VLq-gZ-xTW" firstAttribute="leading" secondItem="XdQ-Tu-2Yw" secondAttribute="leading" id="2eh-dz-VMj"/>
+                    <constraint firstAttribute="trailing" secondItem="VLq-gZ-xTW" secondAttribute="trailing" id="2mH-eZ-6KM"/>
+                    <constraint firstItem="lBC-b2-UmJ" firstAttribute="top" secondItem="VLq-gZ-xTW" secondAttribute="bottom" id="LnS-S7-Mki"/>
+                    <constraint firstAttribute="bottom" secondItem="lBC-b2-UmJ" secondAttribute="bottom" id="Qlf-U4-aNj"/>
+                    <constraint firstItem="VLq-gZ-xTW" firstAttribute="top" secondItem="XdQ-Tu-2Yw" secondAttribute="top" id="Wcu-lb-9Ze"/>
+                    <constraint firstItem="lBC-b2-UmJ" firstAttribute="leading" secondItem="XdQ-Tu-2Yw" secondAttribute="leading" id="lDj-RP-czh"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <size key="customSize" width="350" height="219"/>
+            <connections>
+                <outlet property="aTableView" destination="lBC-b2-UmJ" id="LtN-35-q22"/>
+            </connections>
+            <point key="canvasLocation" x="178.2608695652174" y="197.20982142857142"/>
+        </collectionViewCell>
+    </objects>
+</document>

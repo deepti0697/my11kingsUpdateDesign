@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ContestInvieteCodeView" customModule="DreamTeam" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RVC-02-y2F">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="igo-Vo-KYx">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cyR-Ty-uvf">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invite Contest Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6O-pP-dpa">
+                                            <rect key="frame" x="50" y="19" width="151" height="22"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ga-5M-Xun">
+                                            <rect key="frame" x="10" y="15" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="6Ga-5M-Xun" secondAttribute="height" multiplier="1:1" id="3j7-gz-a6s"/>
+                                                <constraint firstAttribute="height" constant="30" id="ghY-60-od5"/>
+                                            </constraints>
+                                            <color key="tintColor" red="0.078431372550000003" green="0.078431372550000003" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <state key="normal" image="close"/>
+                                            <connections>
+                                                <action selector="closeButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="92m-CR-4rG"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="S6O-pP-dpa" firstAttribute="centerY" secondItem="6Ga-5M-Xun" secondAttribute="centerY" id="Ajs-RH-uG4"/>
+                                        <constraint firstItem="6Ga-5M-Xun" firstAttribute="leading" secondItem="cyR-Ty-uvf" secondAttribute="leading" constant="10" id="alV-6N-ejR"/>
+                                        <constraint firstItem="S6O-pP-dpa" firstAttribute="top" secondItem="cyR-Ty-uvf" secondAttribute="top" constant="19" id="dqc-G7-2Ik"/>
+                                        <constraint firstItem="S6O-pP-dpa" firstAttribute="leading" secondItem="6Ga-5M-Xun" secondAttribute="trailing" constant="10" id="fzp-wF-fBG"/>
+                                        <constraint firstAttribute="height" constant="60" id="kXA-KZ-SPq"/>
+                                        <constraint firstItem="6Ga-5M-Xun" firstAttribute="centerY" secondItem="cyR-Ty-uvf" secondAttribute="centerY" id="yPd-BD-0MQ"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the invitation code you received?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggb-hB-Nju">
+                                    <rect key="frame" x="20" y="95.333333333333329" width="374" height="14.333333333333329"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="0.5568627451" green="0.56862745100000001" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZ0-Jg-Oet">
+                                    <rect key="frame" x="15" y="173.66666666666666" width="384" height="40"/>
+                                    <color key="backgroundColor" red="0.031372549019607843" green="0.45882352941176469" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="uhQ-gw-pGe"/>
+                                    </constraints>
+                                    <state key="normal" title="Join This Contest">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="joinContestButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="FBu-MB-dqH"/>
+                                    </connections>
+                                </button>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Invite Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e9a-bZ-MfG">
+                                    <rect key="frame" x="15" y="119.66666666666669" width="384" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an invitation?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwW-0Q-uRx">
+                                    <rect key="frame" x="10" y="70" width="394" height="20.333333333333329"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="QZ0-Jg-Oet" secondAttribute="trailing" constant="15" id="2nC-8J-iEV"/>
+                                <constraint firstItem="e9a-bZ-MfG" firstAttribute="top" secondItem="ggb-hB-Nju" secondAttribute="bottom" constant="10" id="Fcg-KK-cc4"/>
+                                <constraint firstItem="cyR-Ty-uvf" firstAttribute="leading" secondItem="igo-Vo-KYx" secondAttribute="leading" id="Gra-1a-xsS"/>
+                                <constraint firstItem="ggb-hB-Nju" firstAttribute="leading" secondItem="igo-Vo-KYx" secondAttribute="leading" constant="20" id="P1y-Mk-7ey"/>
+                                <constraint firstAttribute="trailing" secondItem="dwW-0Q-uRx" secondAttribute="trailing" constant="10" id="PLf-eo-ggI"/>
+                                <constraint firstAttribute="trailing" secondItem="cyR-Ty-uvf" secondAttribute="trailing" id="QlI-nu-s0g"/>
+                                <constraint firstAttribute="trailing" secondItem="ggb-hB-Nju" secondAttribute="trailing" constant="20" id="URc-UF-o6f"/>
+                                <constraint firstItem="cyR-Ty-uvf" firstAttribute="top" secondItem="igo-Vo-KYx" secondAttribute="top" id="Yb9-eO-kdv"/>
+                                <constraint firstItem="QZ0-Jg-Oet" firstAttribute="top" secondItem="e9a-bZ-MfG" secondAttribute="bottom" constant="20" id="c4k-FF-876"/>
+                                <constraint firstItem="dwW-0Q-uRx" firstAttribute="leading" secondItem="igo-Vo-KYx" secondAttribute="leading" constant="10" id="dlq-Dw-nLa"/>
+                                <constraint firstItem="dwW-0Q-uRx" firstAttribute="top" secondItem="cyR-Ty-uvf" secondAttribute="bottom" constant="10" id="gff-ns-Ran"/>
+                                <constraint firstItem="e9a-bZ-MfG" firstAttribute="leading" secondItem="igo-Vo-KYx" secondAttribute="leading" constant="15" id="h58-QY-vAF"/>
+                                <constraint firstAttribute="trailing" secondItem="e9a-bZ-MfG" secondAttribute="trailing" constant="15" id="xIC-EH-tZZ"/>
+                                <constraint firstItem="QZ0-Jg-Oet" firstAttribute="leading" secondItem="igo-Vo-KYx" secondAttribute="leading" constant="15" id="z6J-sA-sKa"/>
+                                <constraint firstItem="ggb-hB-Nju" firstAttribute="top" secondItem="dwW-0Q-uRx" secondAttribute="bottom" constant="5" id="zLY-ac-DKx"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="igo-Vo-KYx" firstAttribute="leading" secondItem="d67-Hm-mZD" secondAttribute="leading" id="9wr-ym-FE0"/>
+                        <constraint firstItem="igo-Vo-KYx" firstAttribute="trailing" secondItem="d67-Hm-mZD" secondAttribute="trailing" id="aR2-EP-Tsm"/>
+                        <constraint firstItem="igo-Vo-KYx" firstAttribute="bottom" secondItem="d67-Hm-mZD" secondAttribute="bottom" id="bcM-WL-Xn9"/>
+                        <constraint firstItem="igo-Vo-KYx" firstAttribute="top" secondItem="d67-Hm-mZD" secondAttribute="top" id="u3s-Wr-LGm"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="d67-Hm-mZD"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="RVC-02-y2F" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="G81-GY-i9N"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="RVC-02-y2F" secondAttribute="bottom" id="OZ0-PK-otJ"/>
+                <constraint firstItem="RVC-02-y2F" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TLE-a8-DVB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="RVC-02-y2F" secondAttribute="trailing" id="vhg-ls-euN"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="aContainerView" destination="igo-Vo-KYx" id="IsZ-nu-GAN"/>
+                <outlet property="aJoinButton" destination="QZ0-Jg-Oet" id="gSE-ix-c2P"/>
+                <outlet property="aTextField" destination="e9a-bZ-MfG" id="ZBU-Kq-HkF"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="125.54347826086958"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close" width="22" height="22"/>
+    </resources>
+</document>

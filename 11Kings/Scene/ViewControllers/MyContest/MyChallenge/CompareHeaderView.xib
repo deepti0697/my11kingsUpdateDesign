@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="AVr-p4-YMx" customClass="CompareHeaderView" customModule="My11Kings" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="641" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your oppenent is leading by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLW-QC-jaN">
+                    <rect key="frame" x="195.5" y="61" width="185.5" height="18"/>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LfS-7A-xcy">
+                    <rect key="frame" x="391" y="61" width="37" height="18"/>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
+                    <color key="textColor" red="0.72549019609999998" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="xLW-QC-jaN" firstAttribute="centerY" secondItem="AVr-p4-YMx" secondAttribute="centerY" id="995-Kh-RvH"/>
+                <constraint firstItem="LfS-7A-xcy" firstAttribute="centerY" secondItem="xLW-QC-jaN" secondAttribute="centerY" id="L1a-U2-cKU"/>
+                <constraint firstItem="LfS-7A-xcy" firstAttribute="leading" secondItem="xLW-QC-jaN" secondAttribute="trailing" constant="10" id="QMe-ty-5nC"/>
+                <constraint firstItem="xLW-QC-jaN" firstAttribute="centerX" secondItem="AVr-p4-YMx" secondAttribute="centerX" multiplier="0.9" id="T3Z-5v-alc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="P6S-dc-A2o"/>
+            <connections>
+                <outlet property="pointLbl" destination="LfS-7A-xcy" id="1Gc-cf-UFf"/>
+                <outlet property="textLbl" destination="xLW-QC-jaN" id="Pqm-IW-EoX"/>
+            </connections>
+            <point key="canvasLocation" x="102.17391304347827" y="-227.67857142857142"/>
+        </view>
+    </objects>
+</document>

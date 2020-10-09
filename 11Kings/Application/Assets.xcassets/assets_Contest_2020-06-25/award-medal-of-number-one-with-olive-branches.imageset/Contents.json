@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "award-medal-of-number-one-with-olive-branches.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "award-medal-of-number-one-with-olive-branches@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "award-medal-of-number-one-with-olive-branches@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

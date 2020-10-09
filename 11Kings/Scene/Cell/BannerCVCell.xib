@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BannerCVCell" id="gTV-IL-0wX" customClass="BannerCVCell" customModule="_1Kings" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="183"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="183"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aHw-wE-7c3">
+                        <rect key="frame" x="0.0" y="0.0" width="360" height="183"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="af7-ZD-dIa">
+                                <rect key="frame" x="15" y="15" width="330" height="153"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mask Group 1" translatesAutoresizingMaskIntoConstraints="NO" id="YW7-gs-0uu">
+                                        <rect key="frame" x="0.0" y="0.0" width="330" height="153"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="YW7-gs-0uu" firstAttribute="top" secondItem="af7-ZD-dIa" secondAttribute="top" id="3Jy-Zq-bmf"/>
+                                    <constraint firstAttribute="trailing" secondItem="YW7-gs-0uu" secondAttribute="trailing" id="CYw-Wr-n2D"/>
+                                    <constraint firstAttribute="bottom" secondItem="YW7-gs-0uu" secondAttribute="bottom" id="dmg-GY-HsY"/>
+                                    <constraint firstItem="YW7-gs-0uu" firstAttribute="leading" secondItem="af7-ZD-dIa" secondAttribute="leading" id="xUr-tL-a5h"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.69019607839999997" green="0.1215686275" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="af7-ZD-dIa" secondAttribute="bottom" constant="15" id="9iE-Z4-KUd"/>
+                            <constraint firstItem="af7-ZD-dIa" firstAttribute="leading" secondItem="aHw-wE-7c3" secondAttribute="leading" constant="15" id="c1v-eF-LDQ"/>
+                            <constraint firstAttribute="trailing" secondItem="af7-ZD-dIa" secondAttribute="trailing" constant="15" id="dY8-eK-cIN"/>
+                            <constraint firstItem="af7-ZD-dIa" firstAttribute="top" secondItem="aHw-wE-7c3" secondAttribute="top" constant="15" id="vbi-N3-c1X"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="aHw-wE-7c3" secondAttribute="bottom" id="D0y-fM-LDf"/>
+                <constraint firstItem="aHw-wE-7c3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bEO-P1-r2w"/>
+                <constraint firstItem="aHw-wE-7c3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rc0-jk-zCD"/>
+                <constraint firstAttribute="trailing" secondItem="aHw-wE-7c3" secondAttribute="trailing" id="s2O-At-8ai"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="360" height="183"/>
+            <connections>
+                <outlet property="aBannerImageView" destination="YW7-gs-0uu" id="D6v-N5-gjk"/>
+                <outlet property="aContainerView" destination="af7-ZD-dIa" id="yIV-Z7-BrX"/>
+            </connections>
+            <point key="canvasLocation" x="161.59999999999999" y="158.77061469265368"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Mask Group 1" width="343" height="70"/>
+    </resources>
+</document>

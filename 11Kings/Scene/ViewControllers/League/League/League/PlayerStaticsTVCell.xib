@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="PlayerStaticsTVCell" customModule="Club11" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FBS-BG-9eH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="42.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHG-y5-VlS">
+                                <rect key="frame" x="10" y="12.5" width="38.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actual" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02L-kb-GEE">
+                                <rect key="frame" x="158.5" y="12.5" width="43.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jq6-4R-fxO">
+                                <rect key="frame" x="267.5" y="12.5" width="42.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oHG-y5-VlS" firstAttribute="leading" secondItem="FBS-BG-9eH" secondAttribute="leading" constant="10" id="9Ox-PO-wZU"/>
+                            <constraint firstItem="02L-kb-GEE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="oHG-y5-VlS" secondAttribute="trailing" constant="10" id="GIn-Yp-7Vz"/>
+                            <constraint firstItem="oHG-y5-VlS" firstAttribute="centerY" secondItem="FBS-BG-9eH" secondAttribute="centerY" id="Hzn-Su-uKa"/>
+                            <constraint firstAttribute="trailing" secondItem="Jq6-4R-fxO" secondAttribute="trailing" constant="10" id="aUh-2W-gqP"/>
+                            <constraint firstItem="Jq6-4R-fxO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="02L-kb-GEE" secondAttribute="trailing" constant="10" id="d9v-DV-PDj"/>
+                            <constraint firstItem="02L-kb-GEE" firstAttribute="centerX" secondItem="FBS-BG-9eH" secondAttribute="centerX" constant="20" id="hIY-2R-iLp"/>
+                            <constraint firstItem="Jq6-4R-fxO" firstAttribute="centerY" secondItem="FBS-BG-9eH" secondAttribute="centerY" id="uU6-ys-d2R"/>
+                            <constraint firstItem="02L-kb-GEE" firstAttribute="centerY" secondItem="FBS-BG-9eH" secondAttribute="centerY" id="yLX-vR-JlG"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BQt-fP-1fy">
+                        <rect key="frame" x="0.0" y="42.5" width="320" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="zSQ-wV-7pC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BQt-fP-1fy" firstAttribute="top" secondItem="FBS-BG-9eH" secondAttribute="bottom" id="50z-xc-gun"/>
+                    <constraint firstItem="FBS-BG-9eH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="BZT-L6-wjg"/>
+                    <constraint firstAttribute="trailing" secondItem="BQt-fP-1fy" secondAttribute="trailing" id="Rue-0j-L5Y"/>
+                    <constraint firstItem="BQt-fP-1fy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gLy-ys-i3S"/>
+                    <constraint firstItem="FBS-BG-9eH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="i5k-Rn-dTR"/>
+                    <constraint firstAttribute="bottom" secondItem="BQt-fP-1fy" secondAttribute="bottom" id="lgH-VD-aJR"/>
+                    <constraint firstAttribute="trailing" secondItem="FBS-BG-9eH" secondAttribute="trailing" id="tMn-Ux-xtf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="aActualLabel" destination="02L-kb-GEE" id="RAb-a4-lzg"/>
+                <outlet property="aEventLabel" destination="oHG-y5-VlS" id="rDj-7u-p5I"/>
+                <outlet property="aPointsLabel" destination="Jq6-4R-fxO" id="dla-0o-gIv"/>
+            </connections>
+            <point key="canvasLocation" x="48.75" y="35.91549295774648"/>
+        </tableViewCell>
+    </objects>
+</document>
