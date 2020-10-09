@@ -100,6 +100,10 @@
 		<string>Roboto-BoldItalic.ttf</string>
 		<string>Roboto-Bold.ttf</string>
 		<string>Roboto-Regular.ttf</string>
+		<string>AvenirLTStd-Roman.otf</string>
+		<string>FontsFree-Net-AvenirLTStd-Book</string>
+		<string>FontsFree-Net-AvenirLTStd-Heavy.ttf</string>
+		<string>FontsFree-Net-1579-AvenirLTStd-Medium.ttf</string>
 	</array>
 	<key>UIBackgroundModes</key>
 	<array>

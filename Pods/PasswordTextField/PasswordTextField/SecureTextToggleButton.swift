@@ -10,6 +10,7 @@ import Foundation
 
 
 /// The Segure text button toggle shown in the right side of the textfield
+@available(iOS 11.0, *)
 open class SecureTextToggleButton: UIButton {
     
     
@@ -46,7 +47,7 @@ open class SecureTextToggleButton: UIButton {
     
     
     /// Tint of the image
-    open var imageTint:UIColor = UIColor.yellow{
+    open var imageTint:UIColor = UIColor(named: "#C9CBF2") ?? UIColor(red: 201, green: 203, blue: 243, alpha: 0.5) {
         didSet{
             self.tintColor = imageTint
         }

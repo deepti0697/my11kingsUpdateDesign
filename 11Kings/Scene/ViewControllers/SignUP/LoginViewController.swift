@@ -22,9 +22,9 @@ class LoginViewController: BaseClass {
     @IBOutlet weak var AppleLoginBtn: UIButton!
     @IBOutlet weak var nothaveAccountLabel: UILabel!
     @IBOutlet weak var stackView: UIStackView!
-    @IBOutlet weak var orLblSidelineview: UIView!
-    @IBOutlet weak var upperView: UIView!
-    @IBOutlet weak var orLblRightSideView: UIView!
+//    @IBOutlet weak var orLblSidelineview: UIView!
+//    @IBOutlet weak var upperView: UIView!
+//    @IBOutlet weak var orLblRightSideView: UIView!
     @IBOutlet weak var regiterNowBtn: UIButton!
     @IBOutlet weak var forgotPasswordbtn: UIButton!
     @IBOutlet weak var passwordPlaceHolderText: UILabel!
@@ -65,13 +65,14 @@ class LoginViewController: BaseClass {
     
     func setup() {
         stackView.spacing = 5
-//        pass
-        passwordTextField.customHideSecureTextImage = #imageLiteral(resourceName: "ic_Password_view")
-        passwordTextField.customShowSecureTextImage = #imageLiteral(resourceName: "view")
+        passwordTextField.setLeftPaddingPoints(10.0)
+        userNameTextField.setLeftPaddingPoints(10.0)
+         
+        passwordTextField.imageTintColor = UIColor.FlatColor.Yellow.yellowColor
         userNameTextField.addLine(position: .LINE_POSITION_BOTTOM, color: UIColor.FlatColor.Grey.lightGrey, width: 0.5)
         passwordTextField.addLine(position: .LINE_POSITION_BOTTOM, color: UIColor.FlatColor.Grey.lightGrey, width: 0.5)
         bottomline(btn: regiterNowBtn, color: UIColor(red:255,green:195,blue:145), height: 0.5)
-        bottomline(btn: forgotPasswordbtn, color: UIColor(red:255,green:195,blue:145), height: 0.5)
+//        bottomline(btn: forgotPasswordbtn, color: UIColor(red:255,green:195,blue:145), height: 0.5)
         
     }
     
@@ -83,6 +84,7 @@ class LoginViewController: BaseClass {
         forgotPasswordbtn.setTitle(StringConstant.forgotpassword, for: .normal)
         regiterNowBtn.setTitle(StringConstant.registerNow, for: .normal)
         nothaveAccountLabel.text = StringConstant.nothaveAccount
+        
     }
     // MARK: - IBAction
        @IBAction func didTapSignInButton(_ sender: Any) {

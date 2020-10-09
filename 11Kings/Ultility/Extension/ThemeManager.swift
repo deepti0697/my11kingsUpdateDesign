@@ -51,7 +51,7 @@ struct FlatColor {
     }
     
     struct Yellow {
-        static let yellowColor = UIColor(netHex: 0xfbbb00)
+        static let yellowColor = UIColor(netHex: 0xc9cbf2)
         static let Turbo = UIColor(netHex: 0xF7C23E)
     }
     

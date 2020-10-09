@@ -12,10 +12,10 @@ import Alamofire
 import SwiftyJSON
 class ForgotPasswordViewController: BaseClass {
     
-    @IBOutlet weak var upperView: UIView!
+   
     @IBOutlet weak var nextBtn: UIButton!
     @IBOutlet weak var weAreHeretoHelpYouLbl: UILabel!
-    @IBOutlet weak var emailPlaceholderTextField: UITextField!
+   
     @IBOutlet weak var forgotPassword: UILabel!
     @IBOutlet weak var emailTextFeild: UITextField!
     
@@ -23,10 +23,7 @@ class ForgotPasswordViewController: BaseClass {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        let newLayer = CAGradientLayer()
-        newLayer.colors = [UIColor(red: 255, green: 253, blue: 166).cgColor,UIColor(red: 172, green: 135, blue: 54).cgColor]
-        newLayer.frame = upperView.frame
-        upperView.layer.addSublayer(newLayer)
+      
         // Do any additional setup after loading the view.
          setupDefaultNavigationBar()
     }
@@ -45,11 +42,9 @@ class ForgotPasswordViewController: BaseClass {
     /// Basic UI Setup
     func setup() {
         
-        forgotPassword.text = StringConstant.forgotPassword
-        weAreHeretoHelpYouLbl.text = StringConstant.weHereToHelpYou
-        emailPlaceholderTextField.borderStyle = .none
-        emailTextFeild.borderStyle = .none
-        emailTextFeild.addLine(position: .LINE_POSITION_BOTTOM, color: UIColor(red: 220  , green: 83, blue: 85, alpha: 1), width: 1)
+
+        emailTextFeild.setLeftPaddingPoints(10.0)
+
         nextBtn.setTitle(StringConstant.next, for: .normal)
     }
    

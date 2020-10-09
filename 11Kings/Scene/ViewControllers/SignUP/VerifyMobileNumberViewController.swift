@@ -13,7 +13,7 @@ import SwiftyJSON
 class VerifyMobileNumberViewController: BaseClass {
    
     
-    @IBOutlet var upperView: UIView!
+    
     @IBOutlet weak var otpContainerView: UIView!
     var mobileNumber = ""
     var isFromVerifyMobileVC = false
@@ -33,10 +33,7 @@ class VerifyMobileNumberViewController: BaseClass {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupDefaultNavigationBar()
-        let newLayer = CAGradientLayer()
-               newLayer.colors = [UIColor(red: 255, green: 253, blue: 166).cgColor,UIColor(red: 172, green: 135, blue: 54).cgColor]
-               newLayer.frame = upperView.frame
-               upperView.layer.addSublayer(newLayer)
+      
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -74,7 +71,7 @@ class VerifyMobileNumberViewController: BaseClass {
         resendOtp.setTitle(StringConstant.resendOtp, for: .normal)
         continueToNext.setTitle(StringConstant.continuetoNext, for: .normal)
         mobileNolbl.addLine(position: .LINE_POSITION_BOTTOM, color:UIColor(red: 255, green: 253, blue: 166, alpha: 1), width: 1)
-        resendOtp.addLine(position: .LINE_POSITION_BOTTOM, color: UIColor(red: 255  , green: 253, blue: 166), width: 1)
+       
         
         
     }

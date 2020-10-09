@@ -25,9 +25,9 @@ class OTPStackView: UIStackView {
     var showsWarningColor = false
     
     //Colors
-    let inactiveFieldBorderColor = UIColor(red: 255, green: 195, blue: 145)
-    let textBackgroundColor = UIColor(red: 255, green: 195, blue: 145)
-    let activeFieldBorderColor = UIColor(red: 255, green: 195, blue: 145)
+    let inactiveFieldBorderColor = UIColor.white
+    let textBackgroundColor = UIColor(red: 191, green: 45, blue: 49)
+    let activeFieldBorderColor = UIColor(red: 191, green: 45, blue: 49)
     var remainingStrStack: [String] = []
       var allOTP = ""
     required init(coder: NSCoder) {
@@ -72,11 +72,11 @@ class OTPStackView: UIStackView {
         textField.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
         textField.heightAnchor.constraint(equalTo: self.heightAnchor).isActive = true
         textField.widthAnchor.constraint(equalToConstant: 40).isActive = true
-        textField.backgroundColor = UIColor(red: 255, green: 195, blue: 145)
+        textField.backgroundColor = textBackgroundColor
         textField.textAlignment = .center
         textField.adjustsFontSizeToFitWidth = false
-        textField.font = UIFont(name: "Roboto", size: 30)
-        textField.textColor = .black
+        textField.font = UIFont(name: "AvenirLTStd-Heavy", size: 13)
+        textField.textColor = .white
         textField.layer.cornerRadius = 5
         textField.layer.borderWidth = 0
 //        textField.layer.borderColor = UIColor.FlatColor.Black.balckcolor.cgColor
@@ -93,8 +93,9 @@ class OTPStackView: UIStackView {
                 delegate?.didChangeValidity(isValid: false)
                 return
             }
+           
         }
-        getOTP()
+       
            delegate?.getOtpText(text: allOTP)
         delegate?.didChangeValidity(isValid: true)
     }
@@ -143,12 +144,12 @@ extension OTPStackView: UITextFieldDelegate {
             showsWarningColor = false
         }
 //        textField.layer.borderColor = UIColor.FlatColor.Black.balckcolor.cgColor
-        textField.backgroundColor  = UIColor(red: 255, green: 195, blue: 145)
+        textField.backgroundColor  = UIColor(red: 191, green: 45, blue: 49)
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
         checkForValidity()
 //        textField.layer.borderColor = UIColor.FlatColor.Black.balckcolor.cgColor
-        textField.backgroundColor  = UIColor(red: 255, green: 195, blue: 145)
+        textField.backgroundColor  = UIColor(red: 191, green: 45, blue: 49)
     }
     
     //switches between OTPTextfields

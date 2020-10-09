@@ -105,7 +105,11 @@ open class PasswordTextField: UITextField {
     @IBInspectable open var imageTintColor: UIColor = UIColor(red: 240, green: 75, blue: 80, alpha: 1) {
         didSet {
             
-            self.secureTextButton.tintColor = imageTintColor
+            if #available(iOS 11.0, *) {
+                self.secureTextButton.tintColor = imageTintColor
+            } else {
+                // Fallback on earlier versions
+            }
         }
     }
     
@@ -119,7 +123,11 @@ open class PasswordTextField: UITextField {
             
             if let image = customShowSecureTextImage
             {
-                self.secureTextButton.showSecureTextImage = image
+                if #available(iOS 11.0, *) {
+                    self.secureTextButton.showSecureTextImage = image
+                } else {
+                    // Fallback on earlier versions
+                }
             }
         }
     }
@@ -134,7 +142,11 @@ open class PasswordTextField: UITextField {
             
             if let image = customHideSecureTextImage
             {
-                self.secureTextButton.hideSecureTextImage = image
+                if #available(iOS 11.0, *) {
+                    self.secureTextButton.hideSecureTextImage = image
+                } else {
+                    // Fallback on earlier versions
+                }
             }
             
         }
@@ -151,9 +163,17 @@ open class PasswordTextField: UITextField {
         // Note from Camilo -> Removing so it can be set from XIB
         //self.keyboardType = .asciiCapable
         self.rightViewMode = self.showButtonWhile.textViewMode
-        self.rightView = self.secureTextButton
+        if #available(iOS 11.0, *) {
+            self.rightView = self.secureTextButton
+        } else {
+            // Fallback on earlier versions
+        }
         
-        self.secureTextButton.addObserver(self, forKeyPath: "isSecure", options: NSKeyValueObservingOptions.new, context: &kvoContext)
+        if #available(iOS 11.0, *) {
+            self.secureTextButton.addObserver(self, forKeyPath: "isSecure", options: NSKeyValueObservingOptions.new, context: &kvoContext)
+        } else {
+            // Fallback on earlier versions
+        }
     }
     
     
@@ -164,6 +184,7 @@ open class PasswordTextField: UITextField {
         }
     }
     
+    @available(iOS 11.0, *)
     open lazy var secureTextButton: SecureTextToggleButton = {
         
         return SecureTextToggleButton(imageTint: self.imageTintColor)
@@ -233,7 +254,11 @@ open class PasswordTextField: UITextField {
             
             if context == &kvoContext {
                 
-                self.setSecureMode(self.secureTextButton.isSecure)
+                if #available(iOS 11.0, *) {
+                    self.setSecureMode(self.secureTextButton.isSecure)
+                } else {
+                    // Fallback on earlier versions
+                }
                 
                 
             } else {
@@ -243,7 +268,11 @@ open class PasswordTextField: UITextField {
     }
     
     deinit {
-        self.secureTextButton.removeObserver(self, forKeyPath: "isSecure")
+        if #available(iOS 11.0, *) {
+            self.secureTextButton.removeObserver(self, forKeyPath: "isSecure")
+        } else {
+            // Fallback on earlier versions
+        }
     }
     
     

@@ -14,22 +14,22 @@ import MBProgressHUD
 import FormValidatorSwift
 class RegistrationViewController: BaseClass {
     
-    @IBOutlet weak var upperView: UIView!
+//    @IBOutlet weak var upperView: UIView!
     
     @IBOutlet weak var mobileNoTextField: UITextField!
     @IBOutlet weak var refcodeTextField: UITextField!
    
-    @IBOutlet weak var confirmPasswrdLbl: UILabel!
+//    @IBOutlet weak var confirmPasswrdLbl: UILabel!
     @IBOutlet weak var passwrdTxtField: PasswordTextField!
     @IBOutlet weak var confirmPasswrdTxtField: PasswordTextField!
     @IBOutlet weak var createAccountBtn: UIButton!
     @IBOutlet weak var termsAndConditionLbl: UILabel!
     @IBOutlet weak var checkbtn: CustomCheckBox!
-    @IBOutlet weak var dobPlaceholdeerLbl: UILabel!
-    @IBOutlet weak var passwrdPlceholderLbl: UILabel!
-    @IBOutlet weak var emailPlaceHolderLbl: UILabel!
-    @IBOutlet weak var mobilenoplaceHolder: UILabel!
-    @IBOutlet weak var refcodePlaceHolderLbl: UILabel!
+//    @IBOutlet weak var dobPlaceholdeerLbl: UILabel!
+//    @IBOutlet weak var passwrdPlceholderLbl: UILabel!
+//    @IBOutlet weak var emailPlaceHolderLbl: UILabel!
+//    @IBOutlet weak var mobilenoplaceHolder: UILabel!
+//    @IBOutlet weak var refcodePlaceHolderLbl: UILabel!
     @IBOutlet weak var DateOfBirthTxtField: UITextField!
     @IBOutlet weak var emailTxtField: UITextField!
     
@@ -49,16 +49,7 @@ class RegistrationViewController: BaseClass {
         super.viewDidLoad()
          setupDefaultNavigationBar()
          setupDatePicker()
-        let newLayer = CAGradientLayer()
-               newLayer.colors = [UIColor(red: 255, green: 253, blue: 166).cgColor,UIColor(red: 172, green: 135, blue: 54).cgColor]
-               newLayer.frame = upperView.frame
-               upperView.layer.addSublayer(newLayer)
     }
-    //hitapi()
-    //        WebServices.register(parameters: param, success:  { (json) in
-    //            print(json)
-    //
-    //        }, failure: NSError)
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
@@ -131,7 +122,7 @@ class RegistrationViewController: BaseClass {
         let range1 = (text as NSString).range(of:"Terms & Conditions")
         
         underlineAttriString.addAttribute(NSAttributedString.Key.underlineStyle, value: NSUnderlineStyle.single.rawValue, range: range1)
-        underlineAttriString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor(red: 255, green: 253, blue: 163) , range: range1)
+//        underlineAttriString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor(red: 255, green: 253, blue: 163) , range: range1)
         termsAndConditionLbl.isUserInteractionEnabled = true
         termsAndConditionLbl.attributedText = underlineAttriString
         termsAndConditionLbl.addGestureRecognizer(UITapGestureRecognizer(target:self, action: #selector(tapLabel(gesture:))))
@@ -161,21 +152,14 @@ class RegistrationViewController: BaseClass {
     func setup() {
         passwrdTxtField.autocorrectionType = .no
         confirmPasswrdTxtField.autocorrectionType = .no
-        
-   passwrdTxtField.customHideSecureTextImage = #imageLiteral(resourceName: "ic_Password_view")
-        passwrdTxtField.customShowSecureTextImage = #imageLiteral(resourceName: "view")
-       confirmPasswrdTxtField.customHideSecureTextImage = #imageLiteral(resourceName: "ic_Password_view")
-   confirmPasswrdTxtField.customShowSecureTextImage = #imageLiteral(resourceName: "view")
-
-        refcodePlaceHolderLbl.text = StringConstant.referCode
-     
-        mobilenoplaceHolder.text = StringConstant.mobileNumber
-      
-        emailPlaceHolderLbl.text = StringConstant.email
-        passwrdPlceholderLbl.text = StringConstant.password
-        confirmPasswrdLbl.text = StringConstant.confirmPassword
-       
-        dobPlaceholdeerLbl.text = StringConstant.dob
+        passwrdTxtField.imageTintColor = UIColor.FlatColor.Yellow.yellowColor
+        confirmPasswrdTxtField.imageTintColor = UIColor.FlatColor.Yellow.yellowColor
+        passwrdTxtField.setLeftPaddingPoints(10.0)
+        mobileNoTextField.setLeftPaddingPoints(10.0)
+        confirmPasswrdTxtField.setLeftPaddingPoints(10.0)
+        DateOfBirthTxtField.setLeftPaddingPoints(10.0)
+        emailTxtField.setLeftPaddingPoints(10.0)
+        refcodeTextField.setLeftPaddingPoints(10.0)
         DateOfBirthTxtField.inputAccessoryView = toolbar
           DateOfBirthTxtField.inputView = datePicker
 
@@ -184,6 +168,10 @@ class RegistrationViewController: BaseClass {
        
 //        bottomline(btn: termsAndConditonButton, color: UIColor.FlatColor.Blue.GreenishBlue, height: 1)
 //
+    }
+    
+    @IBAction func loginButtonAction(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
     func setupDatePicker() {
         datePicker.datePickerMode = .date

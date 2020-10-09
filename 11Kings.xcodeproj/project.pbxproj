@@ -233,6 +233,8 @@
 		52E93DAC24988BE6000EF66A /* BannerTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52E93DAB24988BE5000EF66A /* BannerTVCell.xib */; };
 		52FB0CCA246E8B58006BB46B /* ContestInvieteCodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52FB0CC9246E8B58006BB46B /* ContestInvieteCodeView.xib */; };
 		52FB0CCC246E8B5E006BB46B /* ContestInvieteCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB0CCB246E8B5E006BB46B /* ContestInvieteCodeView.swift */; };
+		96047D4F2530738200746094 /* FontsFree-Net-AvenirLTStd-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96047D4E2530736100746094 /* FontsFree-Net-AvenirLTStd-Heavy.ttf */; };
+		96047D5225307C0700746094 /* FontsFree-Net-1579-AvenirLTStd-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96047D5125307BCA00746094 /* FontsFree-Net-1579-AvenirLTStd-Medium.ttf */; };
 		9638060424BF011B00EC35DA /* MarqueeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638060324BF011B00EC35DA /* MarqueeLabel.swift */; };
 		963814DA24B58DF300427B3B /* InvestmentAnalyzerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963814D924B58DF300427B3B /* InvestmentAnalyzerViewController.swift */; };
 		9638A12D24B62A4B00B181CB /* CompareTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638A12C24B62A4B00B181CB /* CompareTeamViewController.swift */; };
@@ -288,6 +290,8 @@
 		969564AC24F5120B00EE6D0A /* TournamentLeaderBoardSeriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969564AB24F5120A00EE6D0A /* TournamentLeaderBoardSeriesViewController.swift */; };
 		969564AE24F51E5900EE6D0A /* TournamentLeaderBoardSeriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 969564AD24F51E5900EE6D0A /* TournamentLeaderBoardSeriesTableViewCell.xib */; };
 		969564B024F51E9C00EE6D0A /* TournamentLeaderBoardSeriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969564AF24F51E9C00EE6D0A /* TournamentLeaderBoardSeriesTableViewCell.swift */; };
+		96C0D3EA25303ACE003E0EC3 /* AvenirLTStd-Roman.otf in Resources */ = {isa = PBXBuildFile; fileRef = 96C0D3E825303A8B003E0EC3 /* AvenirLTStd-Roman.otf */; };
+		96C0D3ED25303CC0003E0EC3 /* FontsFree-Net-AvenirLTStd-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96C0D3EC25303C79003E0EC3 /* FontsFree-Net-AvenirLTStd-Book.ttf */; };
 		B106AD9D09381BEC5C55B40D /* Pods_11Kings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865564C009F09B420196262C /* Pods_11Kings.framework */; };
 		FA1CE22A23682513002A63FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE22923682513002A63FF /* AppDelegate.swift */; };
 		FA1CE22C23682513002A63FF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE22B23682513002A63FF /* LoginViewController.swift */; };
@@ -579,6 +583,8 @@
 		52FB0CCB246E8B5E006BB46B /* ContestInvieteCodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContestInvieteCodeView.swift; sourceTree = "<group>"; };
 		865564C009F09B420196262C /* Pods_11Kings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_11Kings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F5B28AE6361F35C435E73C3 /* Pods-11Kings.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-11Kings.debug.xcconfig"; path = "Target Support Files/Pods-11Kings/Pods-11Kings.debug.xcconfig"; sourceTree = "<group>"; };
+		96047D4E2530736100746094 /* FontsFree-Net-AvenirLTStd-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-AvenirLTStd-Heavy.ttf"; sourceTree = "<group>"; };
+		96047D5125307BCA00746094 /* FontsFree-Net-1579-AvenirLTStd-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-1579-AvenirLTStd-Medium.ttf"; sourceTree = "<group>"; };
 		9638060324BF011B00EC35DA /* MarqueeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarqueeLabel.swift; sourceTree = "<group>"; };
 		963814D924B58DF300427B3B /* InvestmentAnalyzerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentAnalyzerViewController.swift; sourceTree = "<group>"; };
 		9638A12C24B62A4B00B181CB /* CompareTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareTeamViewController.swift; sourceTree = "<group>"; };
@@ -634,6 +640,8 @@
 		969564AB24F5120A00EE6D0A /* TournamentLeaderBoardSeriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentLeaderBoardSeriesViewController.swift; sourceTree = "<group>"; };
 		969564AD24F51E5900EE6D0A /* TournamentLeaderBoardSeriesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TournamentLeaderBoardSeriesTableViewCell.xib; sourceTree = "<group>"; };
 		969564AF24F51E9C00EE6D0A /* TournamentLeaderBoardSeriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentLeaderBoardSeriesTableViewCell.swift; sourceTree = "<group>"; };
+		96C0D3E825303A8B003E0EC3 /* AvenirLTStd-Roman.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Roman.otf"; sourceTree = "<group>"; };
+		96C0D3EC25303C79003E0EC3 /* FontsFree-Net-AvenirLTStd-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-AvenirLTStd-Book.ttf"; sourceTree = "<group>"; };
 		9D6716E3580BFC95E7BF7AEC /* Pods-LoginScreen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginScreen.debug.xcconfig"; path = "Target Support Files/Pods-LoginScreen/Pods-LoginScreen.debug.xcconfig"; sourceTree = "<group>"; };
 		D87617079AEF8652CF146BF9 /* Pods-DreamTeam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamTeam.release.xcconfig"; path = "Target Support Files/Pods-DreamTeam/Pods-DreamTeam.release.xcconfig"; sourceTree = "<group>"; };
 		E86D2F942388C6C840D38A40 /* Pods-LoginScreen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginScreen.release.xcconfig"; path = "Target Support Files/Pods-LoginScreen/Pods-LoginScreen.release.xcconfig"; sourceTree = "<group>"; };
@@ -773,14 +781,18 @@
 				521829D4249A4226002EC0C7 /* Roboto-Regular.ttf */,
 				521829D5249A4226002EC0C7 /* Roboto-MediumItalic.ttf */,
 				521829D6249A4226002EC0C7 /* RobotoCondensed-Italic.ttf */,
+				96047D4E2530736100746094 /* FontsFree-Net-AvenirLTStd-Heavy.ttf */,
+				96C0D3E825303A8B003E0EC3 /* AvenirLTStd-Roman.otf */,
 				521829D7249A4226002EC0C7 /* RobotoCondensed-BoldItalic.ttf */,
 				521829D8249A4226002EC0C7 /* Apache License.txt */,
 				521829D9249A4226002EC0C7 /* RobotoCondensed-LightItalic.ttf */,
+				96047D5125307BCA00746094 /* FontsFree-Net-1579-AvenirLTStd-Medium.ttf */,
 				521829DA249A4226002EC0C7 /* Roboto-ThinItalic.ttf */,
 				521829DB249A4226002EC0C7 /* RobotoCondensed-Regular.ttf */,
 				521829DC249A4226002EC0C7 /* Roboto-BoldItalic.ttf */,
 				521829DD249A4226002EC0C7 /* Roboto-LightItalic.ttf */,
 				521829DE249A4226002EC0C7 /* Roboto-Italic.ttf */,
+				96C0D3EC25303C79003E0EC3 /* FontsFree-Net-AvenirLTStd-Book.ttf */,
 				521829DF249A4226002EC0C7 /* Roboto-BlackItalic.ttf */,
 				521829E0249A4226002EC0C7 /* Roboto-Bold.ttf */,
 				521829E1249A4226002EC0C7 /* Roboto-Thin.ttf */,
@@ -1484,6 +1496,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96047D5225307C0700746094 /* FontsFree-Net-1579-AvenirLTStd-Medium.ttf in Resources */,
+				96047D4F2530738200746094 /* FontsFree-Net-AvenirLTStd-Heavy.ttf in Resources */,
+				96C0D3ED25303CC0003E0EC3 /* FontsFree-Net-AvenirLTStd-Book.ttf in Resources */,
+				96C0D3EA25303ACE003E0EC3 /* AvenirLTStd-Roman.otf in Resources */,
 				963AEA5024B70FAC0027383D /* CompareTableViewCell.xib in Resources */,
 				521BDFE3248F855F007A054E /* MyTeamResponseCollectionViewCell.xib in Resources */,
 				963F25B624EA48330044E206 /* LeaderBoardPointTableViewCell.xib in Resources */,
